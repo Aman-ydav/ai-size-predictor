@@ -1,5 +1,6 @@
 # AI Size Predictor
 
+Basically, this is a class assignment that we have to make for under our curriculum.
 An AI-powered clothing size prediction system that helps users find their perfect fit across different brands.
 
 ## Features
@@ -71,12 +72,3 @@ ai-size-predictor/
 - Backend: Node.js, Express
 - AI: Machine Learning (Random Forest)
 - Data Visualization: Chart.js
-
-## License
-
-MIT
-
-## Contact
-
-Email: info@aisizepredictor.com
-Phone: (555) 123-4567 
