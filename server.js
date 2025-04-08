@@ -13,20 +13,21 @@ app.use(express.static('public'));
 // Sample size mapping data (in a real app, this would come from a database)
 const sizeMapping = {
     male: {
-        XS: { height: [160, 170], weight: [50, 60], chest: [80, 90], waist: [70, 80], hips: [85, 95] },
-        S: { height: [165, 175], weight: [55, 65], chest: [85, 95], waist: [75, 85], hips: [90, 100] },
-        M: { height: [170, 180], weight: [60, 70], chest: [90, 100], waist: [80, 90], hips: [95, 105] },
-        L: { height: [175, 185], weight: [65, 75], chest: [95, 105], waist: [85, 95], hips: [100, 110] },
-        XL: { height: [180, 190], weight: [70, 80], chest: [100, 110], waist: [90, 100], hips: [105, 115] }
+        XS: { height: [150, 155], weight: [45, 50], chest: [82, 88], waist: [70, 75], hips: [85, 90] },
+        S:  { height: [156, 162], weight: [51, 58], chest: [88, 92], waist: [76, 80], hips: [90, 95] },
+        M:  { height: [163, 168], weight: [59, 65], chest: [92, 98], waist: [81, 85], hips: [95, 100] },
+        L:  { height: [169, 175], weight: [66, 72], chest: [98, 104], waist: [86, 90], hips: [100, 105] },
+        XL: { height: [176, 182], weight: [73, 80], chest: [104, 110], waist: [91, 96], hips: [105, 110] }
     },
     female: {
-        XS: { height: [150, 160], weight: [45, 55], chest: [75, 85], waist: [60, 70], hips: [80, 90] },
-        S: { height: [155, 165], weight: [50, 60], chest: [80, 90], waist: [65, 75], hips: [85, 95] },
-        M: { height: [160, 170], weight: [55, 65], chest: [85, 95], waist: [70, 80], hips: [90, 100] },
-        L: { height: [165, 175], weight: [60, 70], chest: [90, 100], waist: [75, 85], hips: [95, 105] },
-        XL: { height: [170, 180], weight: [65, 75], chest: [95, 105], waist: [80, 90], hips: [100, 110] }
+        XS: { height: [148, 152], weight: [40, 45], chest: [76, 80], waist: [60, 65], hips: [80, 85] },
+        S:  { height: [153, 157], weight: [46, 50], chest: [80, 84], waist: [66, 70], hips: [85, 90] },
+        M:  { height: [158, 162], weight: [51, 56], chest: [84, 88], waist: [71, 75], hips: [90, 95] },
+        L:  { height: [163, 168], weight: [57, 63], chest: [88, 92], waist: [76, 80], hips: [95, 100] },
+        XL: { height: [169, 174], weight: [64, 70], chest: [92, 98], waist: [81, 86], hips: [100, 105] }
     }
 };
+
 
 // Custom size prediction function
 function predictSize(measurements, gender) {
